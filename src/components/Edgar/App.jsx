@@ -9,7 +9,6 @@ export default function App() {
 		year: 2015
 	})
 
-
 	const handleClick = (action) => {
 		switch (action) {
 			case "random":
