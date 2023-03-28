@@ -22,15 +22,16 @@ export default function App() {
 		}
 		
 	}
+
 			
 	return (
 		<div>
 			<h1>{count}</h1>
 			<h1>{JSON.stringify(data)}</h1>
 			<button onClick={() => handleClick("plus")}>+</button>
-			<button onClick={() => handleClick1("reset")}>Reset</button>
-			<button onClick={() => handleClick2("minus")}>-</button>
-			<button onClick={() => handleClick2("random")}>Random</button>
+			<button onClick={() => handleClick("reset")}>Reset</button>
+			<button onClick={() => handleClick("minus")}>-</button>
+			<button onClick={() => handleClick("random")}>Random</button>
 			<button onClick={ChangeData}>Change Data</button>
 			</div>
 	)
