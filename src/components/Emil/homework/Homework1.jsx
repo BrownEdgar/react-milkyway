@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function homework1() {
+export default function Homework1() {
     const [arr,setArr]=useState([])
     const handleClick=(action)=>{
         switch (action) {
@@ -8,14 +8,14 @@ export default function homework1() {
                 let random=[]
                 for (let i = 0; i <10 ; i++) {
                   random.push( Math.trunc(Math.random()*101));
-                    setArr(random)  
 
                 }
+                setArr(random)  
+
                 
                 break;
             case "odd":
                 for (let i = 0; i < arr.length; i++) {
-                    console.log("a");
                     if (arr[i]%2==0) {
                         setArr([...arr, arr[i]=1])
                     }
@@ -38,6 +38,7 @@ export default function homework1() {
     }
   return (
     <div><h1>{JSON.stringify(arr)}</h1> 
+    <img src="" alt="" />
     <button onClick={()=>{handleClick("random")}}>random</button>
     <button onClick={()=>{handleClick("odd")}}>aaa</button>
     <button onClick={()=>{handleClick("")}}></button>
