@@ -1,39 +1,28 @@
 import React, { useState } from 'react'
 
-export default function homework1() {
+
+function foo() {
+	const arr = [];
+	for (let i = 0; arr.length < 10; i++) {
+		const random = Math.trunc(Math.random() * 100)
+		arr.push(random)
+	}
+	return arr
+}
+function foo2(arr) {
+	const copy = arr.map(elem => elem % 2 === 0 ? elem + 1 : 1)
+
+	return copy
+}
+export default function Homework1() {
     const [arr,setArr]=useState([])
     const handleClick=(action)=>{
-        switch (action) {
-            case "random":
-                let random=[]
-                for (let i = 0; i <10 ; i++) {
-                  random.push( Math.trunc(Math.random()*101));
-                    setArr(random)  
-
-                }
-                
-                break;
-            case "odd":
-                for (let i = 0; i < arr.length; i++) {
-                    console.log("a");
-                    if (arr[i]%2==0) {
-                        setArr([...arr, arr[i]=1])
-                    }
-                    else {
-                        setArr([...arr,arr[i]=0])
-
-                    }
-                    
-                }
-                
-                break;
-            case "":
-                
-                break;
-        
-            default:return;
-                
-        }
+			switch (action) {
+				case "random": setArr(foo()); break;
+				case "odd": setArr(foo2(arr)); break;
+					default:
+						break;
+				}
 
     }
   return (
