@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/Inga/lesson2/App';
+import Homework2 from './components/Miqayel/Homeworks/Homework2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Homework1 />);
+root.render(<Homework2 />);
 
 
