@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-const SEC_URL = process.env.REACT_APP_SEC_URL
+const SEC_URL = process.env.REACT_APP_MAIN_URL
 
 export default function App() {
     const [data, setData] = useState([])
