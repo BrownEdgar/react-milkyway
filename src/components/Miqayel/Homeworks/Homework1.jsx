@@ -7,9 +7,11 @@ export default function Homework1() {
       case "random":
         let arr1 = []
         for (let i = 0; i < 10; i++) {
-            arr1.push(Math.trunc(Math.random()*101))
-            setArr(arr1)
-        }
+            const random = Math.trunc(Math.random()*100)
+            arr1.push(random)
+        }           
+         setArr(arr1)
+
         break;
       case "odd":
         for (let i = 0; i < arr.length; i++) {
