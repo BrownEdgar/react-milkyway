@@ -1,0 +1,14 @@
+div {
+  max-width: 1140px;
+  margin: 20px auto;
+
+}
+
+button{
+  margin: 20px;
+  border-radius: 12px;
+  border: 1px solid orange;
+  font-weight: 700;
+  cursor: pointer;
+  
+}
