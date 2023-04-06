@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1140px;
+  margin: 20px auto;
+  padding: 1rem;
+}
+.App form {
+  width: 60%;
+  margin: 20px auto;
+  padding: 1rem;
+  border: 2px solid grey;
+  border-radius: 12px;
+}
+.App form > div input {
+  width: 100%;
+  margin: 10px auto;
+  padding: 1rem;
+}
+.App form > div label {
+  font-variant: small-caps;
+  font-size: 22px;
+  color: purple;
+}/*# sourceMappingURL=App.css.map */
