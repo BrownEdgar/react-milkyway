@@ -1,0 +1,26 @@
+.Post {
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	gap: 10px;
+	&-item {
+		color: #fff;
+		font-weight: 700;
+		text-decoration: none;
+		background-color: #0483c8;
+		padding: 12px;
+		flex-basis: 40%;
+		flex-grow: 1;
+		border-radius: 12px;
+		border: 1px solid #111;
+		h2 {
+			background-color: rgb(93, 0, 105);
+			border-left: 10px solid #d9ff04;
+			border-right: 10px solid #fac800;
+			border-radius: 12px;
+			padding: 6px;
+			margin-bottom: 12px;
+		}
+	}
+}
