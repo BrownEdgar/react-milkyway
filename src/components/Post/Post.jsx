@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 import { FaUserSecret } from 'react-icons/fa'
 import { SlLike } from 'react-icons/sl'
-import { AiFillTags } from 'react-icons/ai'
+import { AiFillTags, AiOutlineMinusCircle } from 'react-icons/ai'
 import { IoMdArrowBack } from 'react-icons/io'
-import { GrLinkNext } from 'react-icons/gr'
+
 
 import './Post.scss'
 
@@ -14,13 +14,36 @@ export default function Post() {
 	const { id } = useParams();
 	const [post, setPost] = useState({})
 	const [error, setError] = useState(false)
+	const navigate = useNavigate()
 
 	useEffect(() => {
-		axios.get(`https://dummyjson.com/posts/${id}`)
+		axios.get(`http://localhost:4000/posts/${id}`)
 			.then(response => setPost(response.data))
 			.catch(err => setError(true))
 	}, [])
-
+	const handlePostDelete = () => {
+		const data = {
+			"id": 1221,
+			"title": "Lorem ipsum dolor sit amet.",
+			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas esse, facere vitae iusto recusandae! Illum sint, temporibus optio soluta reiciendis minima numquam illo totam!",
+			"userId": 120,
+			"tags": [
+				"crime",
+				"mystery",
+				"love"
+			],
+			"reactions": 1548
+		}
+		fetch('http://localhost:4000/posts/', {
+			method: 'post',
+			body:JSON.stringify(data),
+			headers: {
+				'Content-type': 'application/json; charset=UTF-8',
+			}
+		}).then(response => {
+			console.log(response)
+		})
+	}
 	if (error) {
 		return (
 			<div className='Post'>
@@ -39,7 +62,7 @@ export default function Post() {
 			<p><FaUserSecret /> {post.userId}</p>
 			<p><SlLike /> {post.reactions}</p>
 
-			<Link to={`/posts/${6}`}>next post <GrLinkNext /></Link>
+			<button onClick={handlePostDelete} >delete this post <AiOutlineMinusCircle /></button>
 
 
 		</div>

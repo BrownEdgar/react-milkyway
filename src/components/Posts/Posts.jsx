@@ -1,20 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 import "./Posts.scss"
 
-export default function Posts() {
-	const [posts, setPosts] = useState([]);
-
-	useEffect(() => {
-		axios.get('https://dummyjson.com/posts')
-			.then(response => setPosts(response.data.posts))
-	}, [])
-
+function Posts() {
+	const posts = useLoaderData()
 	return (
 		<div>
-			<h1>Posts page</h1>
 			<div className="Posts">
 				{posts.map(elem => {
 					return (
@@ -32,3 +24,13 @@ export default function Posts() {
 		</div>
 	)
 }
+
+
+async function postLoader({ request, params }) {
+	console.log({ request, params })
+	const response = await axios.get('http://localhost:4000/posts');
+	console.log(response.data)
+	return response.data;
+}
+
+export { Posts, postLoader }
