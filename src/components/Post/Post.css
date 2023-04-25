@@ -1,0 +1,29 @@
+.post {
+  width: 80%;
+  margin: 40px auto;
+  border: 1px solid royalblue;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f3f3f3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 34px 35px;
+  gap: 22px;
+}
+.post .tags {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #111;
+}
+.post h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+.post p {
+  line-height: 1.6;
+  font-size: 24px;
+}
+.post p svg {
+  font-size: 15px;
+  color: royalblue;
+  margin-right: 8px;
+}/*# sourceMappingURL=Post.css.map */
