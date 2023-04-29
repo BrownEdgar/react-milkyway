@@ -1,0 +1,38 @@
+.Post { 
+    width: 600px;
+    margin: 40px auto;
+    border: 1px solid rgb(106, 0, 0);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    background-color: rgb(106, 0, 0);
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    .tags {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        color: #Fff;
+    }
+    h2 {
+        font-weight: 300;
+        margin-bottom: 12px;
+    }
+    p {
+        line-height: 1.6;
+    }
+    svg {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    a {
+        color: #fff;
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+    }
+    .next {
+        top: 0;
+        font-size: 18px;
+    }
+}

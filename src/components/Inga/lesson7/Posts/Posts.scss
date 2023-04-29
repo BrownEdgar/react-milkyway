@@ -1,4 +1,4 @@
-.Post {
+.Posts {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -8,11 +8,11 @@
         color: #fff;
         font-weight: 700;
         text-decoration: none;
-        background-color: rgb(117, 0, 0);
+        background-color: transparent;
         padding: 12px;
         flex-basis: 40%;
         flex-grow: 1;
         border-radius: 12px;
-        border: 1px solid #111;
+        border: 2px solid #fff;
     }
 }

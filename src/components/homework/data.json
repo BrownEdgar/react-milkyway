@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name":"Kim SeokJin",
+      "image" : "https://i.pinimg.com/564x/36/6c/4a/366c4acdb0b1c3768ab81a39a8bdd644.jpg",
+      "about": "Jin, whose real name is Kim Seokjin, is a member of the popular South Korean boy band BTS. He was born in Gwacheon, South Korea. Jin is the oldest member of BTS and is known for his impressive vocals and visuals.He is a multi-talented artist who has also released solo music and has appeared in various television shows and dramas. ",
+      "birth": "04.12.1992"
+    },
+    {
+        "id": 2,
+        "name":"Min Yoongi",
+        "image" : "https://i.pinimg.com/564x/91/d0/d4/91d0d43a90218019436c5cb3d03d9b67.jpg",
+        "about": "Suga, whose real name is Min Yoongi, is a member of the popular South Korean boy band BTS. He was born in Daegu, South Korea.Yoongi is credited with co-writing and producing many of BTS's hit songs. He is also known for his introspective lyrics and personal storytelling in his solo work under the name Agust D.",
+        "birth": "09.03.1993"
+    },
+    {
+        "id": 3,
+        "name":"Jung Hoseok",
+        "image" : "https://i.pinimg.com/564x/d2/dd/d7/d2ddd72b5e26c8288e72442002e9b079.jpg",
+        "about": "J-Hope, whose real name is Jung Hoseok, is a member of the popular South Korean boy band BTS. He was born in Gwangju, South Korea. J-Hope is known for his impressive rapping and dancing skills,high-energy performances and dynamic dance moves.He is credited with co-writing and producing many of BTS's hit songs.",
+        "birth": "18.02.1994"
+    },
+    {
+        "id": 4,
+        "name":"Kim Namjoon",
+        "image" : "https://i.pinimg.com/564x/10/0d/78/100d78077c64de6ecb47d3013b630e66.jpg",
+        "about": "RM, whose real name is Kim Namjoon, is the leader of the popular South Korean boy band BTS. He was born in Ilsan, South Korea.Before joining BTS, RM had a passion for music and was an underground rapper under the name Runch Randa.He is also known for his intellect and has given several speeches on topics such as mental health and education.",
+        "birth": "12.09.1994"
+    },
+    {
+        "id": 5,
+        "name":"Park Jimin",
+        "image" : "https://i.pinimg.com/564x/b3/db/73/b3db738b6d7e0678e139c180fb8fa229.jpg",
+        "about": "Jimin, whose real name is Park Jimin, is a member of the popular South Korean boy band BTS. He was born in Busan, South Korea. Jimin is known for his impressive vocals and his powerful dance skills.He is often praised for his smooth and fluid dance moves and his ability to express emotions through dance.",
+        "birth": "13.10.1995"
+    },
+    {
+        "id": 6,
+        "name":"Kim Taehyung",
+        "image" : "https://i.pinimg.com/564x/8f/79/71/8f797197f8e8df53f028556d4c3a723b.jpg",
+        "about": "V, whose real name is Kim Taehyung, is a member of the popular South Korean boy band BTS. He was born in Daegu, South Korea. Taehyung is known for his distinctive baritone vocals and his unique sense of style.He often experiments with different looks and is known for his bold and unconventional fashion choices.",
+        "birth": "30.12.1995"
+    },
+    {
+        "id": 7,
+        "name":"Jeon Jungkook",
+        "image" : "https://i.pinimg.com/564x/8c/48/b7/8c48b7877b1051f65dd8269626a7e301.jpg",
+        "about": "JK, whose real name is Jeon Jungkook, is a member of the popular South Korean boy band BTS. He was born in Busan, South Korea. Jungkook is known for his impressive vocals, his powerful dance skills, and his all-around talent.He is also known for his impressive dance skills and his ability to perform a wide range of dance styles, including contemporary, hip-hop, and jazz.",
+        "birth": "01.09.1997"
+    }
+]
