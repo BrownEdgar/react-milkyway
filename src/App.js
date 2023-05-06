@@ -1,37 +1,31 @@
-import Home from './components/Home/Home';
-import Blog from './components/Blog/Blog';
-import { Posts, postLoader } from './components/Posts/Posts';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import Post from './components/Post/Post';
-import Layouts from './components/Layouts/Layouts';
-import PrivateRoute from './components/PrivateRoute.jsx/PrivateRoute';
-import ErrorPage from './components/ErrorPage/ErrorPage';
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import Posts from './components/Posts'
+import { ADD_COUNT, CLEAR_OBJECT } from './redux/features/actionTypes';
+import TodoList from './components/TodoList';
 
-import './App.css';
+export default function App() {
 
-function App() {
+	const { developer, count } = useSelector(state => state);
+	console.log(developer)
+	const dispatch = useDispatch();
 
+	const handleClick = () => {
+		dispatch({ type: ADD_COUNT })
+	}
 
+	const handleClick2 = () => {
+		dispatch({ type: CLEAR_OBJECT })
+	}
 
-	const router = createBrowserRouter(
-		createRoutesFromElements(
-				<Route path='/' element={<Layouts />}>
-					<Route index element={<Home />} />
-					<Route element={<PrivateRoute />}>
-						<Route path='blog' element={<Blog />} />
-						<Route path='posts' element={<Posts />} loader={postLoader}/>
-						<Route path='posts/:id' element={<Post />} />
-					</Route>
-					<Route path='*' element={<ErrorPage />} />
-				</Route>
-		)
-	)
 	return (
-		<div className="App">
-
-			<RouterProvider router={router}/>
+		<div>
+			{/* <h1>Redux: {count}</h1>
+			<h1>developer: {JSON.stringify(developer)}</h1>
+			<button onClick={handleClick}> add count</button>
+			<button onClick={handleClick2}>delete function</button> */}
+			<TodoList />	
+			{/* <Posts /> */}
 		</div>
-	);
+	)
 }
-
-export default App;
