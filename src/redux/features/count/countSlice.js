@@ -6,7 +6,7 @@ const countSlice = createSlice({
 	name: "count",
 	initialState: 0,
 	reducers: {
-		addCount(state,action){
+		addCount(state){
 			return state + 1
 		}
 	}

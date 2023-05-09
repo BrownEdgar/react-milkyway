@@ -1,6 +1,17 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, createSelector, createAction, nanoid } from "@reduxjs/toolkit";
 import { fetchMonster } from "./monsterAPI";
 
+
+export const myAction = createAction("myAction", function foo(text) {
+	 console.log(text)
+	return {
+			payload: {
+				text,
+				id: nanoid(),
+				createdAt: new Date().toISOString(),
+			},
+		}
+})
 
 export const getAsyncMonster = createAsyncThunk(
 	'monster/async',
@@ -14,9 +25,24 @@ const monsterSlice = createSlice({
 	name: 'monster',
 	initialState: {
 		data: [],
+		filteredTodo: [],
 		status: ""
 	},
 	reducers: {
+		descSorted: (state,action) => {
+			const completedTodos = state.data.filter(elem => elem.completed)
+			const unCompletedTodos = state.data.filter(elem => !elem.completed);
+			const result= []
+			if (action.payload) {
+				result.push(...completedTodos, ...unCompletedTodos)	
+			}else{
+				result.push(...unCompletedTodos, ...completedTodos)
+			}
+			state.filteredTodo = result
+		},
+		todoReset:(state) => {
+			state.filteredTodo = state.data
+		}
 
 	},
 	extraReducers: (builder) => {
@@ -28,7 +54,8 @@ const monsterSlice = createSlice({
 			.addCase(getAsyncMonster.fulfilled, (state, action) => {
 				return {
 					status: 'success',
-					data: action.payload?.users
+					data: action.payload,
+					filteredTodo: action.payload,
 				}
 			})
 			.addCase(getAsyncMonster.rejected, () => {
@@ -37,11 +64,34 @@ const monsterSlice = createSlice({
 					data: []
 				}
 			})
+			.addCase(myAction, (state, action) =>{
+				console.log(action)
+				return {
+					data: [],
+					filteredTodo: [],
+				}
+			})
 	}
 
 })
 
+
+export const selectMonsters = state => state.monster.filteredTodo
+export const selectCompletedTodos = state => {
+	console.log(1111);
+	return state.monster.data.filter(elem => elem.completed)
+}
+export const memoTodos = createSelector(
+	selectCompletedTodos,
+	(todos) =>  {
+		return todos
+	}
+)
+
+
 export default monsterSlice.reducer
+
+export const { descSorted, todoReset } = monsterSlice.actions
 
 
 
