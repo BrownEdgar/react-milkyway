@@ -1,0 +1,51 @@
+.flex {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex > div {
+    padding: 16px;
+    flex: 1 1 30%;
+    background-color: rgb(168, 210, 236);
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 4px 5px;
+    position: relative;
+}
+
+.flex > div span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.flex > div span.completed {
+    background-color: rgb(0, 232, 23);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    background-color: rgb(43, 91, 140);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
