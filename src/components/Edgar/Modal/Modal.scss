@@ -1,0 +1,36 @@
+.Modal{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #00000087;
+	z-index: 10000;
+	&-Content {
+		width: 400px;
+		padding: 1rem;
+		background-color: #fff;
+		text-align: center;
+		min-height: 150px;
+		border-radius: 16px;
+		button {
+			padding: 0.4rem 2rem;
+			border: 0;
+			border-radius: 8px;
+			font-weight: 700;
+			font-size: 20px;
+			margin: 20px;
+			margin-top: 50px;
+			background-color: #fff;
+			box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+			outline: 2px solid #000;
+			cursor: pointer;
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+	}
+}

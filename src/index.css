@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+<<<<<<< HEAD
 }
 body{
 	background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
@@ -169,3 +172,7 @@ span.completed{
   transition: 0s;
   transform: translate(0, 5%);
 }
+=======
+	font-family: 'Outfit', sans-serif;
+}
+>>>>>>> 8e7faca97faea7b6ec34dd0ada5ea69753c16a16
