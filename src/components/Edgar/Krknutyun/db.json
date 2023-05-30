@@ -1,0 +1,301 @@
+[{
+		"id": 1,
+		"username": "Ruben",
+		"email": "rjolley0@fotki.com",
+		"gender": "Male"
+	},
+	{
+		"id": 2,
+		"username": "Eldridge",
+		"email": "eslayny1@youku.com",
+		"gender": "Male"
+	},
+	{
+		"id": 3,
+		"username": "Jocelyne",
+		"email": "jshannahan2@feedburner.com",
+		"gender": "Female"
+	},
+	{
+		"id": 4,
+		"username": "Olva",
+		"email": "opalley3@blogtalkradio.com",
+		"gender": "Female"
+	},
+	{
+		"id": 5,
+		"username": "Babette",
+		"email": "bportwaine4@blogspot.com",
+		"gender": "Female"
+	},
+	{
+		"id": 6,
+		"username": "Audrie",
+		"email": "abenton5@elpais.com",
+		"gender": "Female"
+	},
+	{
+		"id": 7,
+		"username": "Zared",
+		"email": "zbisson6@umich.edu",
+		"gender": "Male"
+	},
+	{
+		"id": 8,
+		"username": "Elyse",
+		"email": "ebingall7@cbsnews.com",
+		"gender": "Female"
+	},
+	{
+		"id": 9,
+		"username": "Michele",
+		"email": "mfumagallo8@nbcnews.com",
+		"gender": "Female"
+	},
+	{
+		"id": 10,
+		"username": "Letty",
+		"email": "lkensett9@youtube.com",
+		"gender": "Female"
+	},
+	{
+		"id": 11,
+		"username": "Karola",
+		"email": "kabrahamsa@woothemes.com",
+		"gender": "Female"
+	},
+	{
+		"id": 12,
+		"username": "Arlena",
+		"email": "aprobbingsb@amazon.com",
+		"gender": "Female"
+	},
+	{
+		"id": 13,
+		"username": "Fern",
+		"email": "fzanassic@reverbnation.com",
+		"gender": "Female"
+	},
+	{
+		"id": 14,
+		"username": "Halie",
+		"email": "hdarnodyd@symantec.com",
+		"gender": "Female"
+	},
+	{
+		"id": 15,
+		"username": "Thadeus",
+		"email": "tflemmiche@skype.com",
+		"gender": "Male"
+	},
+	{
+		"id": 16,
+		"username": "Devondra",
+		"email": "dmarcqf@slashdot.org",
+		"gender": "Female"
+	},
+	{
+		"id": 17,
+		"username": "Atalanta",
+		"email": "awordeng@forbes.com",
+		"gender": "Female"
+	},
+	{
+		"id": 18,
+		"username": "Rasia",
+		"email": "rhemberyh@businessweek.com",
+		"gender": "Female"
+	},
+	{
+		"id": 19,
+		"username": "Jackie",
+		"email": "jbenziei@storify.com",
+		"gender": "Male"
+	},
+	{
+		"id": 20,
+		"username": "Rheba",
+		"email": "rlettsj@amazon.co.jp",
+		"gender": "Female"
+	},
+	{
+		"id": 21,
+		"username": "Shela",
+		"email": "sriddek@parallels.com",
+		"gender": "Female"
+	},
+	{
+		"id": 22,
+		"username": "Tuckie",
+		"email": "tnealyl@wix.com",
+		"gender": "Male"
+	},
+	{
+		"id": 23,
+		"username": "Florencia",
+		"email": "fashcroftm@msu.edu",
+		"gender": "Female"
+	},
+	{
+		"id": 24,
+		"username": "Cherilyn",
+		"email": "cknilln@reverbnation.com",
+		"gender": "Female"
+	},
+	{
+		"id": 25,
+		"username": "Klarrisa",
+		"email": "kbonnetto@cbc.ca",
+		"gender": "Female"
+	},
+	{
+		"id": 26,
+		"username": "Corella",
+		"email": "cgadiep@illinois.edu",
+		"gender": "Female"
+	},
+	{
+		"id": 27,
+		"username": "Ludvig",
+		"email": "lsharplingq@pagesperso-orange.fr",
+		"gender": "Male"
+	},
+	{
+		"id": 28,
+		"username": "Isidro",
+		"email": "ilovickr@privacy.gov.au",
+		"gender": "Male"
+	},
+	{
+		"id": 29,
+		"username": "Juli",
+		"email": "jmattingleys@cbslocal.com",
+		"gender": "Female"
+	},
+	{
+		"id": 30,
+		"username": "Fabe",
+		"email": "fheretyt@bandcamp.com",
+		"gender": "Male"
+	},
+	{
+		"id": 31,
+		"username": "Lyman",
+		"email": "lskoylesu@hud.gov",
+		"gender": "Male"
+	},
+	{
+		"id": 32,
+		"username": "Bent",
+		"email": "bfairhallv@ox.ac.uk",
+		"gender": "Male"
+	},
+	{
+		"id": 33,
+		"username": "Clive",
+		"email": "cknibbw@dailymail.co.uk",
+		"gender": "Male"
+	},
+	{
+		"id": 34,
+		"username": "Stanton",
+		"email": "skleemanx@prlog.org",
+		"gender": "Male"
+	},
+	{
+		"id": 35,
+		"username": "Lorenzo",
+		"email": "lportigally@moonfruit.com",
+		"gender": "Male"
+	},
+	{
+		"id": 36,
+		"username": "Nicola",
+		"email": "nfranciskiewiczz@php.net",
+		"gender": "Female"
+	},
+	{
+		"id": 37,
+		"username": "Sloan",
+		"email": "slammenga10@shop-pro.jp",
+		"gender": "Male"
+	},
+	{
+		"id": 38,
+		"username": "Lezley",
+		"email": "ltoma11@parallels.com",
+		"gender": "Male"
+	},
+	{
+		"id": 39,
+		"username": "Hal",
+		"email": "hwysome12@arstechnica.com",
+		"gender": "Polygender"
+	},
+	{
+		"id": 40,
+		"username": "Sonia",
+		"email": "sgoldson13@hud.gov",
+		"gender": "Female"
+	},
+	{
+		"id": 41,
+		"username": "Leonidas",
+		"email": "lmcginly14@networksolutions.com",
+		"gender": "Male"
+	},
+	{
+		"id": 42,
+		"username": "Lewiss",
+		"email": "levequot15@mayoclinic.com",
+		"gender": "Male"
+	},
+	{
+		"id": 43,
+		"username": "Sonny",
+		"email": "sbichard16@bbb.org",
+		"gender": "Female"
+	},
+	{
+		"id": 44,
+		"username": "Matilde",
+		"email": "markle17@spiegel.de",
+		"gender": "Female"
+	},
+	{
+		"id": 45,
+		"username": "Karine",
+		"email": "kshort18@vk.com",
+		"gender": "Female"
+	},
+	{
+		"id": 46,
+		"username": "Corilla",
+		"email": "celdershaw19@columbia.edu",
+		"gender": "Female"
+	},
+	{
+		"id": 47,
+		"username": "Florian",
+		"email": "fgriggs1a@bluehost.com",
+		"gender": "Genderfluid"
+	},
+	{
+		"id": 48,
+		"username": "Ernestine",
+		"email": "edifrisco1b@oracle.com",
+		"gender": "Bigender"
+	},
+	{
+		"id": 49,
+		"username": "Jaime",
+		"email": "jcowton1c@va.gov",
+		"gender": "Female"
+	},
+	{
+		"id": 50,
+		"username": "Kariotta",
+		"email": "kmcgivena1d@harvard.edu",
+		"gender": "Female"
+	}
+]

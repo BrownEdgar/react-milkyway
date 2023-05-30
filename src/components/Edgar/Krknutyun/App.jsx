@@ -1,48 +1,78 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import DinamicContent from './DinamicContent';
+import React, { useState } from 'react';
+import classNames from 'classnames';
+import data from './db.json'
 
 import './App.css'
 
-
 export default function App() {
-	const [isActive, setIsActive] = useState(false)
-	const [data, setData] = useState([{
-		id: 1,
-		question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequuntur fuga, hic perspiciatis similique vitae soluta quasi, inventore nostrum non cupiditate doloremque necessitatibus fugit. Consequatur, eos sed voluptas ratione fugit inventore repellendus mollitia non totam officiis. Eaque quasi minima natus!',
-		answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, architecto.",
-		isShow: false
-	}])
-	const handleClick = () => { 
-		setIsActive(!isActive)
+	const [isActiveIndex, setIsActiveIndex] = useState(null);
+	const [users, setUsers] = useState(data)
+	const [gender, setGender] = useState('')
+
+	const handleClick = (index) => {
+		setIsActiveIndex(index)
+	}
+	const handleChange = (e) => { 
+		const {value} = e.target;
+		setGender(value)
 	 }
+
 
 	return (
 		<div className='wrap'>
-			<div className={`box ${isActive ? 'active' : ""}`}>
-				<div className='question'>
-					<p>
-						{data[0].question}
-					</p>
-					<button onClick={handleClick}>show answer</button>
+			{
+				Array(5).fill().map((_, index) => {
+					return <button
+						key={index}
+						className={classNames('button-17', {
+							active: isActiveIndex === index
+						})}
+						onClick={() => handleClick(index)}
+					>
+						button {index + 1}
+					</button>
+				})
+			}
+
+			<form>
+				<div>
+					<input type="radio" name='gender' value='male' id='male' 
+					onChange={handleChange}/>
+					<label htmlFor="male">Male</label>
 				</div>
-				<div className='answer'>
-					<p>
-						{data[0].answer}
-					</p>
-					<button onClick={handleClick}>hide</button>
+				<div>
+					<input type="radio" name='gender' value='female' id='female' 
+					onChange={handleChange}/>
+					<label htmlFor="female">Female</label>
 				</div>
+			</form>
+
+
+
+			<div className="students">
+				<table>
+					<tr>
+						<th>id</th>
+						<th>username</th>
+						<th>email</th>
+						<th>gender</th>
+					</tr>
+					<tbody>
+						{
+							users.map(elem => {
+								return (
+									<tr key={elem.id}>
+										<td>{elem.id}</td>
+										<td>{elem.username}</td>
+										<td>{elem.email}</td>
+										<td>{elem.gender}</td>
+									</tr>
+								)
+							})
+						}
+					</tbody> 
+				</table>
 			</div>
 		</div>
 	)
 }
-
-
-//useEffect
-//useTRansition
-//props.children
-// what is ....
-//useReducer
-// ? :
-// ui button
-
